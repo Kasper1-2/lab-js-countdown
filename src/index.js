@@ -8,7 +8,7 @@ let timer = null; // Variable to store the interval
 
 document.getElementById("start-btn").addEventListener("click", function() {
   console.log("start button clicked!");
-  startCountdown();
+  startCountdown(startCountdown, 1000);
 });
 
 
@@ -30,7 +30,6 @@ function startCountdown() {
   }, 1000);
 }
 
-startCountdown();
 
 
 // ITERATION 3: Show Toast
